@@ -15,7 +15,7 @@ The program currently can do the following:
 - Create order summaries
 
 # Limitations
-Currently, all classes does not have input validation built in, so beware!
+Currently, all classes does not have input validation built in, so beware! However, the output is similar to the example.
 
 # How to run
 Before running, check that Python is installed in your system by running the command in terminal:
