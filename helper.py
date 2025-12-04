@@ -29,39 +29,13 @@ class DeliveryOrder:
         self.customer = c
         self.item = i
         self.status = "preparing"
-        self.driver = None #????
+        self.__driver = None #????
 
     def assign_driver(self,driver):
         # Assuming that the assign driver creates a self.driver. 
         # This is for accessing the driver in summary.
-        self.driver = driver
+        self.__driver = driver
     
     def summary(self):
-        l = f'Item: {self.item}\nCustomer: {self.customer.name}\nStatus: {self.status}\nDriver: {self.driver.name}'
+        l = f'Item: {self.item}\nCustomer: {self.customer.name}\nStatus: {self.status}\nDriver: {self.__driver.name}'
         return l
-    
-# MAIN
-c1 = Customer("Alice","A1")
-c2 = Customer("Bob","B2")
-d = Driver("David","motorcycle")
-c1.introduce()
-c2.introduce()
-d.introduce()
-print()
-do1 = DeliveryOrder(c1,'Laptop')
-do2 = DeliveryOrder(c2,'Headphones') 
-do1.assign_driver(d)
-do2.assign_driver(d)
-# DONT FORGET TO CHECK THE DO1 DO2! ##NY DRIVER!
-print("Order Summary:")
-print(do1.summary())
-print()
-print("Order Summary:")
-print(do2.summary())
-print()
-d.deliver(do1)
-d.deliver(do2)
-print()
-print("Final Status:")
-print(f"Order for {do1.item} → {do1.status}")
-print(f"Order for {do2.item} → {do2.status}")
