@@ -5,7 +5,7 @@ A basic OOP-style program that helps manage your customers, orders and drivers!
 The program currently can do the following:
 ## Customer
 - Create customers with names and addresses
-
+- Place orders under customer's name
 ## Driver
 - Create drivers with names and vehicles
 - Deliver assigned orders
