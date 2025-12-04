@@ -28,7 +28,7 @@ git clone https://github.com/vaporform/final-exam.git
 ```
 Open the folder via prefered IDE or in the terminal
 ```
-cd final_exam
+cd final-exam
 ```
 Then run the command
 ```
